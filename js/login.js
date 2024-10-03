@@ -5,7 +5,7 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "test3" && password == "test3#123"){
 alert ("Login successfully");
-window.location = "index2.html"; // Redirecting to other page.
+window.location = "livestick.html"; // Redirecting to other page.
 return false;
 }
 else{
