@@ -1,0 +1,328 @@
+body {
+    background: linear-gradient(to right, gray 0%, white 50%, white 50%, gray 100%);
+}
+
+.balsigLogoContainer {
+    text-align: center;
+    background: linear-gradient(to bottom, gray 0%,
+     white 5%, green 50%, black 100%);
+}
+
+.balsigLogo {
+    width: 380px;
+    height: 350px;
+}
+
+.competitor {
+    min-width: 15ch;
+    width: 15ch;
+}
+
+.customTitleDiv {
+    text-align: center;
+}
+
+#customTitleInput {
+    color: darkblue;
+}
+
+.customTitleInput {
+    font-family: 'Russo One';
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    text-transform: capitalize;
+    min-width: 15ch;
+    width: 15ch;
+}
+
+.customTitleInput::placeholder {
+    text-transform: lowercase;
+    font-size: 25px;
+    color: rgb(167, 35, 35);
+}
+
+#division_input, #category_input {
+    text-transform: uppercase;
+}
+
+#category_input {
+    padding-left: 15%;
+}
+
+.customTitleInput:focus {
+    background-color: white;
+}
+
+.chooseWinnerBtn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.chooseWinnerBtnRed {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.chooseWinnerBtnRed:hover {
+    background-color: red;
+}
+
+.chooseWinnerBtnBlue {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.chooseWinnerBtnBlue:hover {
+    background-color: blue;
+}
+
+.calculateBtn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.calculateBtn:hover {
+    background-color: green;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.divBtn {
+    text-align: center;
+}
+
+#livestickTitleApp {
+    font-size: 100px;
+    font-family: 'Seymour One';
+}
+
+#division_input, #category_input {
+    color: rgb(167, 35, 35);
+}
+
+#table_placement {
+    padding: 2px;
+}
+
+#head_buttons {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, gray 0%, white 50%, white 50%, gray 100%);
+    padding: 5px;
+}
+
+#time_indicator {
+    display: flex;
+    width: 280px;    
+    margin: auto;
+    gap: 10px;
+    padding: 10px;    
+}
+
+.timer_buttons {
+    display: flex;               /* Use flexbox for alignment */
+    justify-content: center;    /* Center the buttons horizontally */
+    align-items: center;        /* Center the buttons vertically (if needed) */
+    gap: 5px;                   /* Optional: add space between buttons */
+}
+
+#stopwatch_clock {
+    user-select: none;
+    color: yellow;
+    background-color: black;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 75px;
+}
+
+#breaktime_clock {
+    user-select: none;
+    color: yellow;
+    background-color: black;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 35px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.table_header {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    top: 273px;
+    background-color: white;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td {
+    padding: 3px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+
+th {
+    padding: 3px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+
+table, td {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="number"]:read-write:focus{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+input[type="text"] {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+input:read-only:focus, input:read-only::selection {
+    border: none !important;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  border: none;
+  background-color: transparent;
+}
+
+.match_table {
+    background-color: white;
+    border-width: 2px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.match_table_hide {
+    display: none;
+}
+
+.judge_scores {
+    padding: 1px;
+    width: 4ch;
+    text-align: center;
+    color: black;
+}
+
+.desired_time {
+    padding: 1px;
+    width: 3ch;
+    text-align: center;
+    color: black;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 999; /* Overlay appears above other content */
+    visibility: hidden; /* Hide overlay initially */
+}
+
+.popup-banner {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the banner */
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    z-index: 1000; /* Ensure it appears above overlay */
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Hide initially */
+}
+
+.popup-banner2 {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the banner */
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    z-index: 1000; /* Ensure it appears above overlay */
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Hide initially */
+}
+
+.popup-banner.show {
+    opacity: 1; /* Show banner */
+    visibility: visible; /* Make visible */
+    width: 100%;
+    font-size: 50px;
+}
+
+.popup-banner2.show {
+    opacity: 1; /* Show banner */
+    visibility: visible; /* Make visible */
+    width: 100%;
+    font-size: 50px;
+}
+
+.overlay.show {
+    opacity: 1; /* Show overlay */
+    visibility: visible; /* Make visible */
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-bottom: 1px solid;
+    opacity: 75%;
+}

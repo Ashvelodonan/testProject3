@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Seymour One' rel='stylesheet'>
+    <title>Livestick-BALSIG</title>
+</head>
+<body>
+    <header>
+        <div id="balsigLogoContainer" class="balsigLogoContainer">
+            <!-- <img class="balsigLogo" src="https://scontent.fdxb3-2.fna.fbcdn.net/v/t1.15752-9/461024937_3773634782853051_8183340448530066698_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=65CVZhRg6SQQ7kNvgFcZLlO&_nc_ht=scontent.fdxb3-2.fna&oh=03_Q7cD1QEYrjYFs26Dq4N1qzRJBuUAfcI2OYHHGmJzyYWUNJgJbg&oe=671C68A0" alt="balsig logo"> -->
+            <!-- <img class="balsigLogo" src="https://scontent.fdxb3-1.fna.fbcdn.net/v/t1.15752-9/459424739_835318588684949_2309106643168217924_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=AVRM50iOSSUQ7kNvgG7r06j&_nc_ht=scontent.fdxb3-1.fna&oh=03_Q7cD1QGkl0ZE4fJTVDU-3a4twl4oUImop9Y2VqTJWfOy29JcCg&oe=671C7F63" alt="balsig logo"> -->
+            <img class="balsigLogo" src="static/images/BALSIG_circle.png" alt="balsig logo">
+            <!-- <img class="balsigLogo" src="https://scontent.fdxb3-1.fna.fbcdn.net/v/t1.15752-9/459424739_548867121008548_8572645029645546135_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=G_uDPyEEshEQ7kNvgHjYXBo&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=AyUuNGvmseExtockS495QLH&oh=03_Q7cD1QEQiQv9N2P1BKPw5zQk9lRhO3DADh4hgDB3HjdYL3RLOg&oe=671C7095" alt="balsig logo"> -->
+        </div>
+        <hr>
+        <div id="currentDate"></div>
+        <div class="customTitleDiv">
+            <input class="customTitleInput" id="customTitleInput" type="text" placeholder="input title">
+            <div style="margin: 50px;">
+                <span class="customTitleInput" id="livestickTitleApp"></span>
+                <div id="divCatInput">
+                    <input class="customTitleInput" type="text" name="" id="division_input" placeholder="division">
+                    <input class="customTitleInput" type="text" name="" id="category_input" placeholder="category">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div id="popupBanner" class="popup-banner">
+            <p>RED Wins!</p>
+            <!-- <button class="chooseWinnerBtn" id="closeBannerBtn"></button> -->
+        </div>
+        <div id="popupBanner2" class="popup-banner2">
+            <p>BLUE Wins!</p>
+            <!-- <button class="chooseWinnerBtn" id="closeBannerBtn"></button> -->
+        </div>
+        <div id="head_buttons"></div>
+            <p> 
+                <div class="timer_buttons">
+                    <button type="button" id="timer_play_button">play</button>
+                    <button type="button" id="timer_pause_button">pause</button>
+                    <button type="button" id="timer_reset_button">reset</button>
+                </div>
+                <div id="time_indicator">
+                    <span id="stopwatch_clock"></span>
+                    <span id="breaktime_clock"></span>                    
+                </div>
+                <div>
+                    <span>Match No.: <span id="match_indicator"></span></span>
+                    <span>match time: <input class="desired_time" type="number" name="" id="match_time_input" placeholder="sec"></span>
+                    <span>break time: <input class="desired_time" type="number" name="" id="break_time_input" placeholder="sec"></span>
+                </div>
+                <p>Note: <i>input break time as "0" for rematch.</i></p>
+                <!-- <h2 id="time_indicator">Time: <span id="stopwatch_clock"></span></h2> -->                
+                <!-- <div id="rematch_table"><br></div> -->
+                <p>
+                    Total Seconds: <span id="total_seconds_indicator"></span>
+                    <button type="button" id="print_match_table_button">print</button>
+                    <button type="button" id="view_match_table_button">view matches</button>
+                    <button type="button" id="create_match_table_button">next match</button>
+                    <button type="button" id="remove_match_table_button">-</button>
+                    <!-- <button type="button" id="calculate_button">calculate</button> -->
+                </p>
+            </p>
+        </div>
+        <div id="table_placement"></div>
+        <!-- <table id="match_table_1">
+            
+        </table> -->
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="stopwatch.js"></script>
+    <script src="main.js"></script>
+    <script src="print2.js"></script>
+</body>
+</html>
