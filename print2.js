@@ -58,16 +58,6 @@ function printPDF() {
                         padding: 3px; /* Add padding for better spacing */
                         page-break-inside: avoid; /* Prevent breaks inside cells */
                     }
-                    footer {
-                        position: fixed;
-                        bottom: 5px;
-                        left: 0;
-                        right: 10px;
-                        text-align: end;
-                    }
-                    footer:after {
-                        content: "Page " counter(page);
-                    }
                 }
                 .balsigLogo { width: 140px; height: 125px; }
                 .calculateBtn { display: none; }
@@ -79,7 +69,6 @@ function printPDF() {
             <p> ${liveStickTitle} (${currentDateStatic}) </p>
             ${divCatInput.outerHTML}      
             ${printTable.outerHTML} <!-- Insert the modified print table -->
-            <footer class="page-number"></footer>
         </center></body>
         </html>
     `);
