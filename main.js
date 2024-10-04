@@ -394,10 +394,10 @@ function createTableMatch() {
             console.log(targetRsJ3Element);
             console.log(targetBsJ3Element);
 
-            if (targetRsJ1Element.value > targetBsJ1Element.value) {
+            if (parseInt(targetRsJ1Element.value) > parseInt(targetBsJ1Element.value)) {
                 redScoreTotal++;
                 console.log("red", targetRsJ1Element.value, "redT", redScoreTotal);
-            } else if (targetRsJ1Element.value < targetBsJ1Element.value) {
+            } else if (parseInt(targetRsJ1Element.value) < parseInt(targetBsJ1Element.value)) {
                 blueScoreTotal++;
                 console.log("blue", targetBsJ1Element.value, "blueT", blueScoreTotal);
             } else {                
@@ -405,10 +405,10 @@ function createTableMatch() {
                 console.log("draw", drawTotal);
             }
             
-            if (targetRsJ2Element.value > targetBsJ2Element.value) {
+            if (parseInt(targetRsJ2Element.value) > parseInt(targetBsJ2Element.value)) {
                 redScoreTotal++;                
                 console.log("red", targetRsJ2Element.value, "redT", redScoreTotal);    
-            } else if (targetRsJ2Element.value < targetBsJ2Element.value) {
+            } else if (parseInt(targetRsJ2Element.value) < parseInt(targetBsJ2Element.value)) {
                 blueScoreTotal++;
                 console.log("blue", targetBsJ2Element.value, "blueT", blueScoreTotal);
             } else {                
@@ -416,10 +416,10 @@ function createTableMatch() {
                 console.log("draw", drawTotal);
             }
             
-            if (targetRsJ3Element.value > targetBsJ3Element.value) {
+            if (parseInt(targetRsJ3Element.value) > parseInt(targetBsJ3Element.value)) {
                 redScoreTotal++;                
-                console.log("red", targetRsJ3Element.value, "redT", redScoreTotal);    
-            } else if (targetRsJ3Element.value < targetBsJ3Element.value) {
+                console.log("red", targetRsJ3Element.value, "redT", redScoreTotal);
+            } else if (parseInt(targetRsJ3Element.value) < parseInt(targetBsJ3Element.value)) {
                 blueScoreTotal++;
                 console.log("blue", targetBsJ3Element.value, "blueT", blueScoreTotal);
             } else {                
