@@ -46,7 +46,9 @@ document.addEventListener('keydown', function(event) {
         (
             (event.key === 'R' || event.key === 'P') ||
             (event.ctrlKey && (event.key === 'P' || event.key === 'p')) ||
-            (event.ctrlKey && (event.key === 'R' || event.key === 'r'))
+            (event.ctrlKey && (event.key === 'R' || event.key === 'r')) ||
+            (event.ctrlKey && (event.key === 'C' || event.key === 'c')) ||
+            (event.ctrlKey && (event.key === 'V' || event.key === 'v'))
         ) {
             return; // Allow these key combinations
         }
