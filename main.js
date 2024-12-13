@@ -29,6 +29,33 @@ let drawTotal = 0;
 // divisionInput.value = "juniors division";
 // categoryInput.value = "extra light weight";
 
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the context menu from appearing
+    // alert("Right-click is disabled on this page.");
+    // console.log(event);
+});
+
+document.addEventListener('keydown', function(event) {
+    // Check if both Ctrl and Shift keys are pressed
+    if 
+    (
+        (event.ctrlKey && event.shiftKey) ||
+        (event.ctrlKey) || (event.shiftKey)
+    ) {
+        if 
+        (
+            (event.key === 'R' || event.key === 'P') ||
+            (event.ctrlKey && (event.key === 'P' || event.key === 'p')) ||
+            (event.ctrlKey && (event.key === 'R' || event.key === 'r'))
+        ) {
+            return; // Allow these key combinations
+        }
+        event.preventDefault(); // Prevent default action for any Ctrl + Shift combination
+        // alert('Ctrl + Shift combinations are disabled!');
+        // console.log(event);
+    }
+});
+
 function createTableMatch() {
     if (!redJudgeScores[matchRound]) {
         redJudgeScores[matchRound] = [];
