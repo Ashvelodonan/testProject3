@@ -1,4 +1,4 @@
-document.getElementById("customTitleInput").value = `${"115th Baguio Day"} ${`National Invitational Arnis Tournament`}`;
+document.getElementById("customTitleInput").value = `${"Itogon"} ${`Invitational Arnis Tournament`}`;
 let livestickTitleApp = document.getElementById("livestickTitleApp");
 livestickTitleApp.textContent = "livestick".toUpperCase();
 
@@ -48,7 +48,8 @@ document.addEventListener('keydown', function(event) {
             (event.ctrlKey && (event.key === 'P' || event.key === 'p')) ||
             (event.ctrlKey && (event.key === 'R' || event.key === 'r')) ||
             (event.ctrlKey && (event.key === 'C' || event.key === 'c')) ||
-            (event.ctrlKey && (event.key === 'V' || event.key === 'v'))
+            (event.ctrlKey && (event.key === 'V' || event.key === 'v')) ||
+            (event.ctrlKey && (event.key === 'X' || event.key === 'x'))
         ) {
             return; // Allow these key combinations
         }
